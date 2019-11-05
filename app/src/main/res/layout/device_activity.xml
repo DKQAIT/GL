@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:background="@drawable/sharp_gradient"
+        >
+        <RadioGroup
+            android:id="@+id/ordergroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:checkedButton="@+id/tab1"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="待处理"
+                android:background="@drawable/orderdraw"
+                android:textColor="@color/radiobutton_textcolor"
+                android:layout_marginLeft="5dp"
+
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="处理中"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/orderdraw"
+                android:textColor="@color/radiobutton_textcolor"
+                />
+
+            <RadioButton
+                android:id="@+id/tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="已完成"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/orderdraw"
+                android:textColor="@color/radiobutton_textcolor"
+
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/main_flyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/orderVP"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

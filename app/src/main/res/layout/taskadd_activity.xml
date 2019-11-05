@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/l_zong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@mipmap/ic_back"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="任务处理"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+       android:visibility="gone"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/r_dcl"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="待处理"
+            android:checked="true"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/r_clz"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="处理中"
+            android:checked="true"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/r_ywc"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="已完成"
+            ></RadioButton>
+
+    </RadioGroup>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/t_sc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/sharp_btn_gradient"
+            android:text="添加照片"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:id="@+id/t_scwj"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/sharp_btn_gradient"
+            android:text="提交处理任务"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/recycle"
+        ></android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/round_edittext"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:imeOptions="actionSearch"
+        android:hint="请输入发布任务名称"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:textColor="@color/color_orange"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/round_edittext"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:imeOptions="actionSearch"
+        android:hint="请输入处理任务详细内容"
+        android:inputType="textMultiLine"
+        android:singleLine="true"
+        android:textColor="@color/color_orange"
+        android:textSize="16sp" />
+
+
+
+
+
+</LinearLayout>

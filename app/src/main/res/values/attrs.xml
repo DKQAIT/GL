@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="appBackground" format="reference|color" />
+    <attr name="appThemeColor" format="reference|color" />
+    <attr name="appTitleSize" format="dimension" />
+    <attr name="appHeaderHeight" format="dimension" />
+    <attr name="appTitleColor" format="reference|color" />
+    <attr name="appTitleBarBg" format="reference|color" />
+
+
+
+
+
+    <!-- 自定义星期 View -->
+
+    <!-- 自定义日历 View -->
+    <declare-styleable name="calendarview">
+        <attr name="item_select_backgroud" format="reference"/>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="TintImageView">
+        <attr name="tint" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civBorderWidth" format="dimension" />
+        <attr name="civBorderColor" format="color" />
+        <attr name="civBorderOverlay" format="boolean" />
+        <attr name="civFillColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="NavView">
+        <attr name="navHorizontal" format="boolean" />
+        <attr name="navChecked" format="boolean" />
+        <attr name="navDrawRight" format="reference" />
+        <attr name="navDrawRightWidth" format="dimension" />
+        <attr name="navText" format="string" />
+        <attr name="navTextColor" format="reference|color" />
+        <attr name="navTextSize" format="dimension" />
+        <attr name="navDraw" format="reference|color" />
+        <attr name="navDrawTint" format="reference|color" />
+        <attr name="navDrawWidth" format="dimension" />
+        <attr name="navDrawHeight" format="dimension" />
+        <attr name="navTextRight" format="boolean" />
+        <attr name="navPadding" format="dimension" />
+        <attr name="navCenter" format="boolean" />
+        <attr name="navDrawPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordInputEdt">
+
+        <attr name="numLength" format="integer" />              <!-- 输入位数的长度-->
+        <attr name="isPwd" format="boolean" />                  <!-- 是否显示为密码-->
+        <attr name="autoCloseKeyBoard" format="boolean" />      <!-- 输入完成后是否自动关闭键盘-->
+        <attr name="isNumber" format="boolean" />               <!-- 是否只能输入数字-->
+        <attr name="widthSpace" format="dimension" />           <!-- 框框之间的横向间隙-->
+        <attr name="heightSpace" format="dimension" />          <!-- 框框之间的纵向间隙-->
+        <attr name="rectStroke" format="dimension" />           <!-- 框框的宽度-->
+        <attr name="txtSize" format="dimension" />              <!-- 字体的大小-->
+        <attr name="circleRadius" format="dimension" />         <!-- 密码格式中圆形的半径-->
+        <attr name="bgFill" format="boolean" />                 <!-- 框框是否附带背景-->
+        <attr name="textColor" format="color" />                <!-- 字体的颜色-->
+        <attr name="rectNormalColor" format="color" />          <!-- 框框没选中时候默认的颜色-->
+        <attr name="rectChooseColor" format="color" />          <!-- 框框选中时候默认的颜色-->
+        <attr name="pwdType" format="enum">                    <!-- 密码的类型：圆或者*号-->
+            <enum name="CIRCLE" value="0" />
+            <enum name="XINGHAO" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>

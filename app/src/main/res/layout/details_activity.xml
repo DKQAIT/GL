@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/i_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/default_head"
+
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/t_yhm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="用户名:"
+                        android:textSize="17sp"
+                        android:visibility="gone"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/t_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="手机号:"
+                        android:textSize="17sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/t_ye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="余额:"
+                        android:textSize="17sp"
+
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/t_zcsj"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="注册时间：2018-11-11 12：00：00"
+                android:textSize="17sp"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/t_shsj"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="审核时间：2018-11-11 12：00：00"
+                android:textSize="17sp"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/t_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="真实姓名：董先生"
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+                android:id="@+id/t_sfz"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="身份证号：410101188808081234"
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+                android:id="@+id/t_cph"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="车牌号： 京A 88888"
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+                android:id="@+id/t_jnyj"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="是否缴纳押金：是"
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="身份证正面"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/i_sfz"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/sf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="驾驶证正面"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/i_jsz"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/sf" />
+
+
+            <LinearLayout
+                android:id="@+id/l_zong"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tgrz"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sharp_btn_gradient"
+                    android:gravity="center"
+                    android:text="通过认证"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/jjrz"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/sharp_btn_hong"
+                    android:gravity="center"
+                    android:text="拒绝认证"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:visibility="visible"
+
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

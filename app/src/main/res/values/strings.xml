@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">静态管理</string>
+
+
+
+    <string name="back">返回</string>
+    <string name="confirm">确定</string>
+    <string name="retry">重试</string>
+    <string name="crop">剪切</string>
+</resources>

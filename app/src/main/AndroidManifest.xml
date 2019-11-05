@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jtjt.qtgl" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+
+    <application
+        android:name="com.jtjt.qtgl.http.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/jtjt_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jtjt_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        >
+        <!--"  android:theme="@android:style/Theme.NoTitleBar"-->
+
+
+        <activity android:name="com.jtjt.qtgl.ui.login.SYActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jtjt.qtgl.ui.login.BZActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.jtjt.qtgl.ui.login.ZCActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.ui.login.ExamineActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.DetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.BmonthActiviy"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.ui.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.ui.login.camera.CropActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.jtjt.qtgl.activity.PinkListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.jtjt.qtgl.activity.UserListActivity"
+            android:screenOrientation="portrait"/>
+        <!--webView 网页-->
+        <activity android:name="com.jtjt.qtgl.ui.login.WebActivity"/>
+
+
+        <activity android:name="com.jtjt.qtgl.activity.UplodeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.jtjt.qtgl.activity.DeviceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.DamagedetailsActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="com.jtjt.qtgl.activity.ModifyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.RWPinkListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.UplodeRWActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.TaskListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.TaskdetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.TaskaddActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.ParkDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.EquipmentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.JmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.FeedbackActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.FeedbackdetailsActivity"
+android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.FeedActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jtjt.qtgl.activity.OrderListActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

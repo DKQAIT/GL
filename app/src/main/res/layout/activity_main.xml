@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="手机号：18270299990"
+                />
+
+            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="ID：9999"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="身份 ：车主"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:text="缴纳押金状态： 是/否"
+            android:textColor="@color/t_gray"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额： "
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9999.99元"
+                android:textSize="17sp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册日期： 2018-10-25 18：18：18"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址：北京市朝阳区新华科技大厦"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停车场：国资委建材局停车场"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/xiangqing"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="详情"
+                android:layout_marginLeft="30dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/sharp_btn_gradient"
+
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/bycw"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="包月车位"
+                android:layout_marginRight="30dp"
+
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/sharp_btn_gradient"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="审核："
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/tgrz"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="通过认证"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/sharp_btn_gradient"
+
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="拒绝认证"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/sharp_btn_hong"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

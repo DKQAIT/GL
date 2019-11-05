@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/l_zong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@mipmap/ic_back"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="反馈详情"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            />
+
+    </RelativeLayout>
+
+    <com.jtjt.qtgl.ui.login.view.RecyclerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="昵称：名字"
+        android:visibility="visible"
+        android:textSize="15sp"
+        />
+        <TextView
+            android:id="@+id/t_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="手机号：18816881788"
+            android:textSize="15sp"
+            />
+    <TextView
+        android:id="@+id/t_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:text="反馈内容："
+        android:textSize="15sp"
+        />
+
+
+        <TextView
+            android:id="@+id/t_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:text="反馈时间："
+            android:textSize="15sp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/t_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="处理结果："
+            android:visibility="gone"
+            android:textSize="15sp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            >
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/t_cl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sharp_btn_gradient"
+            android:text="去处理"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+    </LinearLayout>
+    </com.jtjt.qtgl.ui.login.view.RecyclerScrollView>
+
+</LinearLayout>

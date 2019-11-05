@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--"id": 317,-->
+    <!--"img": "[\"\\/uploads\\/20181204\\/631468452a846af3af1a70374c5fd557.jpg\"]",-->
+    <!--"create_time": 1543893926,-->
+    <!--"content": "发个啥地方",-->
+    <!--"aid": 9,-->
+    <!--"tid": 315,-->
+    <!--"status": 2,-->
+    <!--"username": "lizhangyong"-->
+    <!---->
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="处理人："
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/t_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="处理时间："
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/t_content"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="处理描述："
+        android:textSize="15sp"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider_gray"
+        />
+
+
+
+
+</LinearLayout>
